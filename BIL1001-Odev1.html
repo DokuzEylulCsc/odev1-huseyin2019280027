@@ -1,21 +1,53 @@
+
 <!DOCTYPE html>
 <html>
+<head>
+<title>HÃ¼seyin Elibol 2019280027</title>
+</head>
 <body>
-<h2>2019 Güz Döneminin ilk ödevi</h2>
+HÃ¼seyin Elibol 2019280027
+<h2>2019 GÃ¼z DÃ¶neminin ilk Ã¶devi</h2>
 <label for="id1">Metin kutusu 1</label>
-<input type='text' id='id1' /> 
+<input type='text' id='id1' />
 <br>
 <label for="id2">Metin kutusu 2</label>
-<input type='text' id='id2' /> 
+<input type='text' id='id2' />
 <br><br>
-<button type="button">Topla</button>
+<button type="button" id='topla'>Topla</button>
 <br><br>
 <label for="id3">Metin kutusu 3</label>
-<input type='text' id='id3' /> 
+<input type='text' id='id3' />
 <br>
 <label for="id4">Metin kutusu 4</label>
-<input type='text' id='id4' /> 
+<input type='text' id='id4' />
 <br><br>
-<button type="button">Yapýþtýr</button>
+<button type="button" id='yapis'>YapÄ±ÅŸtÄ±r</button>
+
+<script language="Javascript">
+
+		var sayi1=document.getElementById("id1");
+		var sayi2=document.getElementById("id2");
+		var toplaBtn=document.getElementById("topla");
+		
+		toplaBtn.onclick=function()
+		{
+		var toplam= Number(sayi1.value) + Number(sayi2.value);
+		alert(toplam);
+		}
+
+		var sayi3=document.getElementById("id3");
+		var sayi4=document.getElementById("id4");
+		var yapisBtn=document.getElementById("yapis");
+
+		yapisBtn.onclick=function()
+		{
+		var yapistir = sayi3.value + ' ' + sayi4.value;
+		alert(yapistir);
+		}
+
+
+
+</script>
+
 </body>
 </html>
